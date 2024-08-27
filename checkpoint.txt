@@ -1,0 +1,34 @@
+PK: Primary Key
+FK: Foreign Key
+
+
+Gymnasium Table:
+
+    Gym_ID (PK)
+    Name
+    Address
+    Phone Number
+
+Member Table:
+
+    Member_ID (PK)
+    First Name
+    Last Name
+    Address
+    Date of Birth
+    Gender
+    Gym_ID (FK)
+
+Session Table:
+
+    Session_ID (PK)
+    Sport Type
+    Schedule
+    Gym_ID (FK)
+    Max_Capacity (Default: 20)
+
+Registration Table:
+
+    Registration_ID (PK)
+    Member_ID (FK)
+    Session_ID (FK)
